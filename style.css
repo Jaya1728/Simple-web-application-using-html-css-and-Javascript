@@ -1,0 +1,175 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Universal Reset and Font Setting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font across the site */
+}
+
+/* Logo Styles */
+.logo {
+    height: 200px; /* Adjust height as needed */
+    width: auto;   /* Maintain aspect ratio for the logo */
+    margin-left: 20px; /* Add margin to position logo */
+}
+
+/* Body Background Image */
+body {
+    background: url("Images/Homepages.jpg") no-repeat center center fixed; /* Position and fix background */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    overflow: hidden; /* Prevent scrolling (if needed) */
+}
+
+/* Wrapper for Centering Content */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh; /* Extend height slightly beyond viewport */
+    background: rgba(39, 39, 39, 0.4); /* Transparent background overlay */
+}
+
+/* Navigation Bar */
+.nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px; /* Vertically center text */
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent); /* Gradient background */
+    z-index: 100; /* Ensure nav stays on top */
+}
+
+/* Navigation Menu Styles */
+.nav-menu ul {
+    display: flex;
+    list-style-type: none; /* Remove default list styling */
+}
+
+.nav-menu ul li {
+    margin: 0 25px; /* Horizontal spacing between menu items */
+}
+
+.nav-menu ul li .link {
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium weight for links */
+    color: #fff; /* White text */
+    padding-bottom: 15px; /* Padding below the text */
+}
+
+/* Hover and Active State for Links */
+.nav-menu ul li .link:hover,
+.active {
+    border-bottom: 2px solid #ffc107; /* Bottom border on hover */
+    color: #ffc107; /* Change text color to yellow */
+}
+
+/* Button in Navigation (if needed) */
+.nav-button .btn {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4); /* Transparent white background */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+/* Hover Effect for Button */
+.nav-button .btn:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly more transparent on hover */
+}
+
+/* Banner Section */
+.banner {
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Banner Content */
+.banner-content {
+    text-align: center; /* Center text */
+    color: #fff; /* White text */
+    max-width: 1000px; /* Limit width */
+    padding: 30px; /* Add padding */
+}
+
+/* Banner Subtitle */
+.banner-sub-title {
+    font-size: 16px;
+    font-weight: 300; /* Light weight */
+    color: #ffc107; /* Yellow subtitle */
+    margin-bottom: 10px;
+}
+
+/* Banner Title */
+.banner-title {
+    font-size: 3rem;
+    font-weight: 700; /* Bold title */
+    line-height: 1.2; /* Slightly reduced line height */
+    margin-bottom: 20px;
+}
+
+/* Banner Description */
+.banner-text {
+    font-size: 1.2rem;
+    font-weight: 400; /* Normal weight */
+    line-height: 1.8; /* Increase spacing between lines */
+    margin-bottom: 30px;
+}
+
+/* Button Styles for Banner */
+.banner-btn-area-2 .btn {
+    background: #ffc107; /* Yellow background */
+    color: #000; /* Black text */
+    padding: 15px 40px; /* Padding for button */
+    border-radius: 30px;
+    font-size: 1.1rem;
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: 500; /* Medium weight */
+    transition: background 0.3s ease; /* Smooth transition */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Button Hover Effect */
+.banner-btn-area-2 .btn:hover {
+    background: #ffcd38; /* Slightly lighter yellow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 2.5rem; /* Reduce title size on tablets */
+    }
+    
+    .banner-text {
+        font-size: 1rem; /* Reduce text size on tablets */
+    }
+
+    .banner-btn-area-2 .btn {
+        padding: 12px 30px; /* Adjust padding for smaller screens */
+        font-size: 1rem;
+    }
+}
+
+/* Further Adjustments for Small Screens (e.g., mobile) */
+@media (max-width: 480px) {
+    .banner-title {
+        font-size: 2rem; /* Smaller title for mobile */
+    }
+    
+    .banner-text {
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
+}

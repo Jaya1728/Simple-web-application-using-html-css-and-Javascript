@@ -1,0 +1,29 @@
+.about {
+    min-height: 100vh;
+    padding: 40px;
+    background: url("Images/Homepages.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.about-content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #fff;
+}

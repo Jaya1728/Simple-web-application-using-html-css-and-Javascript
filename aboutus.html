@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Genetics Informatics Pvt Ltd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header class="nav">
+        <div class="wrapper">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <a href="/">
+                        <img src="Images/logo-new (1).png" alt="Logo" class="logo">
+                    </a>
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="index.html" class="link">Home</a></li>
+                        <li><a href="about.html" class="link active">About</a></li>
+                        <li><a href="#" class="link">Blog</a></li>
+                        <li><a href="#" class="link">Services</a></li>
+                        <li><a href="#" class="link">Contact us</a></li>
+                    </ul>
+                </div>
+               
+                <div class="nav-menu-btn">
+                    <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <h1>About Genetics Informatics Pvt Ltd</h1>
+            <p>Genetics Informatics Pvt Ltd is a leading IT company specializing in delivering cutting-edge technological solutions. Our mission is to empower businesses by transforming their visions into innovative digital solutions, helping them achieve sustained growth and success.</p>
+            <p>With a strong focus on customer satisfaction, our team of experts provides tailored IT services including software development, cloud solutions, and IT consulting. We believe in the transformative power of technology to drive positive change for businesses across various industries.</p>
+            <p>Founded in 2010, we have been delivering excellence to clients worldwide and continue to grow with the ever-evolving technology landscape.</p>
+        </div>
+    </section>
+
+    <!-- JavaScript for responsive menu -->
+    <script>
+        function myMenuFunction() {
+            var i = document.getElementById("navMenu");
+            if (i.className === "nav-menu") {
+                i.className += " responsive";
+            } else {
+                i.className = "nav-menu";
+            }
+        }
+    </script>
+</body>
+</html>
+
